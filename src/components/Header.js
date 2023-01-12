@@ -21,10 +21,16 @@ class Header extends React.Component {
             
               <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
                 <Nav.Item>
-                  <Nav.Link href="/projects">Projects</Nav.Link>
+                  <Nav.Link href="/projects">Education</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="/maps">Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="/maps">Maps</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="/maps">Favorite API's</Nav.Link>
                 </Nav.Item>
               </Nav>
 
