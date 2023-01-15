@@ -11,7 +11,7 @@ class About extends React.Component {
             <Card.Header><b>About Me</b></Card.Header>
             <Card.Body>
               <Card.Text text="dark">
-                <p>Lorem ipsum dolor sit amet, consecteturgna aliqua. Ut enimis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>I'm a developer and communicator. My background consists of a traditional Computer Science Degree + 1.5 years experience as full-stack developer. Now, I'm hoping to transition to front-end development.</p>
                 <a href={Resume} alt="image" target="_blank" rel="noreferrer">
                   <div className="mb-2">
                     <Button variant="secondary" size="lg">

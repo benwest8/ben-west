@@ -23,7 +23,7 @@ class App extends React.Component {
             <div class="description">
               <h1><b>Hi, I'm Ben.</b></h1>
               <Col>
-                <h2>Here is my personal website I'm building using React</h2> 
+                <h2>This is my personal website I'm building using React</h2> 
               </Col>
             </div>
             </Row>
@@ -32,7 +32,7 @@ class App extends React.Component {
               <Col>
               <About/>
                 </Col>
-              <Col>
+              <Col align='center'>
                 <ContactCard />
               </Col>
             </Row>

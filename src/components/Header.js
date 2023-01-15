@@ -18,21 +18,23 @@ class Header extends React.Component {
             <Navbar.Brand href="#home">Ben West</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            
+
+            {/*
               <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
                 <Nav.Item>
-                  <Nav.Link href="/projects">Education</Nav.Link>
+                  <Nav.Link href="/education">Education</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="/maps">Projects</Nav.Link>
+                  <Nav.Link eventKey="/projectss">Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="/maps">Maps</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="/maps">Favorite API's</Nav.Link>
+                  <Nav.Link eventKey="/favApi">Favorite API's</Nav.Link>
                 </Nav.Item>
-              </Nav>
+              </Nav> 
+          */}
 
               <Nav className="nav-links" >
                 <Nav.Link href="https://www.linkedin.com/in/ben-west98/" target="_blank" rel="noreferrer" text-decoration="none">
