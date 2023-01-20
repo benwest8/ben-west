@@ -2,8 +2,8 @@ import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import KayakImage from '../images/kayak.jpeg';
-import FishImage from '/Users/benwest/Projects/ben-west/src/images/fish.jpeg';
-import SkiImage from '/Users/benwest/Projects/ben-west/src/images/ski.jpeg';
+import FishImage from '../images/fish.jpeg';
+import SkiImage from '../src/images/ski.jpeg';
 
 function GuideSlide() {
   return (
