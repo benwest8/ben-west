@@ -10,7 +10,7 @@ class ContactCard extends React.Component {
           <Card border="dark" bg="dark" fluid style={{ width: '20rem' }}>
             <Card.Header><b>Get In Touch</b></Card.Header>
             <Card.Body>
-              <Card.Text text="dark">
+              <Card.Text text="dark" text-align="left">
                 <p><PhoneIphoneIcon />(970) 817-0519</p>
                 <p><EmailIcon /> benjwest8@gmail.com</p>
               </Card.Text>

@@ -18,7 +18,7 @@ class Header extends React.Component {
             <Navbar.Brand href="#home">Ben West</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-
+            
             {/*
               <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
                 <Nav.Item>
@@ -33,8 +33,7 @@ class Header extends React.Component {
                 <Nav.Item>
                   <Nav.Link eventKey="/favApi">Favorite API's</Nav.Link>
                 </Nav.Item>
-              </Nav> 
-          */}
+    </Nav> */}
 
               <Nav className="nav-links" >
                 <Nav.Link href="https://www.linkedin.com/in/ben-west98/" target="_blank" rel="noreferrer" text-decoration="none">

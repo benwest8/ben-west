@@ -11,26 +11,30 @@ export default function ChipsArray() {
   const chipData = [
     { key: 0, label: 'JavaScript' },
     { key: 1, label: 'React' },
-    { key: 2, label: 'ArcGIS Online' },
+    { key: 2, label: 'HTML' },
     { key: 3, label: 'Git' },
-    { key: 4, label: 'Microsoft Teams' },
-    { key: 5, label: 'HTML' },
-    { key: 6, label: 'CSS' },
+    { key: 4, label: 'CSS' },
+    { key: 5, label: 'Microsoft Teams' },
+    { key: 6, label: 'ArcGIS' },
     { key: 7, label: 'Java Spring Boot' },
     { key: 8, label: 'QGIS' },
-    { key: 8, label: 'SQL' }
+    { key: 9, label: 'SQL' },
+    { key: 10, label: 'WordPress' },
+    { key: 10, label: 'Jira' }
   ];
 
   return (
-    <Paper 
+    <>
+    <Paper elevation='24'
       sx={{
         display: 'flex',
         justifyContent: 'center',
         flexWrap: 'wrap',
         listStyle: 'none',
         boxShadow: 'none',
-        p: 0.5,
-        m: 0,
+        backgroundColor: 'lightgray',
+        p: 1,
+        m: 3,
       }}
       component="ul"
     >
@@ -45,5 +49,6 @@ export default function ChipsArray() {
         );
       })}
     </Paper>
+    </>
   );
 }
