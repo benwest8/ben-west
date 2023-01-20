@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import KayakImage from '../images/kayak.jpeg';
 import FishImage from '../images/fish.jpeg';
-import SkiImage from '../src/images/ski.jpeg';
+import SkiImage from '../images/ski.jpeg';
 
 function GuideSlide() {
   return (
