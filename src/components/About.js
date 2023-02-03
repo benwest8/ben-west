@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Resume from '../images/BenWest_Resume_Indeed.pdf';
+import Resume from '../images/BenWest_Resume_Indeed.png';
 import Button from 'react-bootstrap/Button';
 
 class About extends React.Component {
