@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
 import Header from '../src/components/Header';
 import ContactCard from '../src/components/ContactCard';
 import Technologies from './components/Technologies';
 import Container from 'react-bootstrap/Container';
 import Education from './components/Education';
+import Projects from './components/Projects';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -17,7 +20,14 @@ class App extends React.Component {
 
     return (
       <>
-        <Header />
+        
+          <Header />
+          <div className='container'>
+          <Routes>
+            <Route exact path="/education" component={Education} />
+            <Route exact path="/projects" component={Projects} />
+          </Routes>
+        </div>
         <div className="App">
           <Container fluid>
             <Row>

@@ -5,8 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import linkedinLogo from '../images/Linkedin-Logo.png'
 import githubLogo from '../images/github-logo.png'
-import Projects from './Projects'
-import { Route, Routes } from 'react-router-dom';
+
+import { Link, useMatch, useResolvedPath }from 'react-router-dom';
 
 
 class Header extends React.Component {
@@ -19,21 +19,29 @@ class Header extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             
-            {/*
-              <Nav activeKey="/home" onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+            <Nav className="mr-auto">
                 <Nav.Item>
-                  <Nav.Link href="/education">Education</Nav.Link>
+                  <Link to="/education">Education</Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="/projectss">Projects</Nav.Link>
+                  <Nav.Link eventKey="/projects">Projects</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="/dev">Dev</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="/maps">Maps</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="/favApi">Favorite API's</Nav.Link>
+                  <Nav.Link eventKey="/leadership">Leadership</Nav.Link>
                 </Nav.Item>
-    </Nav> */}
+                <Nav.Item>
+                  <Nav.Link eventKey="/hobbies">Hobbies</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="/articles">Articles</Nav.Link>
+                </Nav.Item>
+              </Nav>
 
               <Nav className="nav-links" >
                 <Nav.Link href="https://www.linkedin.com/in/ben-west98/" target="_blank" rel="noreferrer" text-decoration="none">
