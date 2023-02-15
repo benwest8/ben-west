@@ -3,64 +3,33 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
 import Header from '../src/components/Header';
-import ContactCard from '../src/components/ContactCard';
-import Technologies from './components/Technologies';
-import Container from 'react-bootstrap/Container';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import GuideSlide from '../src/components/Carousel';
-import About from './components/About';
+import Home from './pages/Home';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Dev from './pages/Dev';
+import Maps from './pages/Maps';
+import Leadership from './pages/Leadership';
+import Articles from './pages/Articles';
+import Error from './components/Error';
 
 class App extends React.Component {
 
   render() {
-
     return (
       <>
-        
-          <Header />
-          <div className='container'>
-          <Routes>
-            <Route exact path="/education" component={Education} />
-            <Route exact path="/projects" component={Projects} />
-          </Routes>
-        </div>
+        <Header />
         <div className="App">
-          <Container fluid>
-            <Row>
-              <div class="description">
-                <h1><b>Hi, I'm Ben.</b></h1>
-                <Col>
-                  <h2>This is my personal website I'm building using React</h2>
-                </Col>
-              </div>
-            </Row>
-            <br></br>
-            <Row >
-              <Col>
-                <About />
-              </Col>
-              <Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ContactCard />
-              </Col>
-            </Row>
-            <Row>
-              <Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Education />
-              </Col>
-              <Col >
-                <GuideSlide />
-              </Col>
-            </Row>
-            <Row style={{ display: 'flex' }}>
-              <Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Technologies />
-              </Col>
-            </Row>
-          </Container>
+          {/* List Possible Page Routes Here */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/projects" element={< Projects />} />
+            <Route path="/dev" element={<Dev />} />
+            <Route path="/maps" element={<Maps />} />
+            <Route path="/leadership" element={<Leadership />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="*" element={< Error />} />
+          </Routes>
         </div>
       </>
     )

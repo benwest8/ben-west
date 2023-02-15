@@ -16,6 +16,13 @@
 
 .header {
   text-align: center;
+  display: flex;
+  
+}
+
+.page-nav {
+  color: inherit;
+  text-decoration: none;
 }
 
 .nav-links {
