@@ -1,5 +1,7 @@
 import React from 'react';
-import Teachnologies from '../components/Technologies';
+import Technologies from '../components/Technologies';
+import securianLogo from '../images/securianLogo.png';
+import { Image } from 'react-bootstrap';
 
 class Dev extends React.Component {
 
@@ -8,8 +10,8 @@ class Dev extends React.Component {
             <>
                 <div>
                     <h1>Development Experience</h1>
-                    <p>This is the dev page</p>
-                    <Teachnologies />
+                    <Technologies />
+                    <Image src={ securianLogo } style={{ width: 400}} rounded alt="securian logo" />
                 </div>
             </>
         );

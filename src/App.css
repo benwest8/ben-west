@@ -40,9 +40,7 @@
   text-align: justify-center;
 }
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 30%;
+.leaflet-container {
+  width: 350px;
+  height: 350px;
 }

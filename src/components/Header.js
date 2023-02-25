@@ -23,13 +23,14 @@ class Header extends React.Component {
                   <Link className="page-nav" to="/education">Education</Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link className="page-nav" to="/projects">Projects</Link>
-                </Nav.Link>
-                <Nav.Link>
                   <Link className="page-nav" to="/dev">Dev</Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link className="page-nav" to="/maps">Maps</Link>
+                </Nav.Link>
+                {/* 
+                <Nav.Link>
+                  <Link className="page-nav" to="/projects">Projects</Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link className="page-nav" to="/leadership">Leadership</Link>
@@ -37,8 +38,8 @@ class Header extends React.Component {
                 <Nav.Link>
                   <Link className="page-nav" to="/articles">Articles</Link>
                 </Nav.Link>
+                */}
               </Nav>
-
               <Nav className="nav-links" >
                 <Nav.Link href="https://www.linkedin.com/in/ben-west98/" target="_blank" rel="noreferrer" text-decoration="none">
                   <Image src={linkedinLogo} width="33%" fluid alt="linkedin" />

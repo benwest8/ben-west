@@ -1,10 +1,11 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 
 import ContactCard from '../components/ContactCard';
-import Technologies from '../components/Technologies';
 import EducationCard from '../components/EducationCard';
 import GuideSlide from '../components/Carousel';
 import About from '../components/About';
+import pro_photo from '../images/pro_photo.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -16,11 +17,12 @@ class Home extends React.Component {
     return (
       <>
          <Container fluid>
+         <Image src={ pro_photo } style={{ height: 150, width: 160}} roundedCircle alt="Profile Pic" />
             <Row>
               <div class="description">
                 <h1><b>Hi, I'm Ben.</b></h1>
                 <Col>
-                  <h2>This is my personal website I'm building using React</h2>
+                  <h2>This is my personal website I'm building using React</h2>                 
                 </Col>
               </div>
             </Row>
@@ -39,11 +41,6 @@ class Home extends React.Component {
               </Col>
               <Col >
                 <GuideSlide />
-              </Col>
-            </Row>
-            <Row style={{ display: 'flex' }}>
-              <Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Technologies />
               </Col>
             </Row>
           </Container>
