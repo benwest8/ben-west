@@ -12,6 +12,7 @@ class Maps extends React.Component {
                     <h1>Maps</h1>
                     {/* <p>Teacher story of map making - 1st day of GIS</p> */}
                     <Map />
+                    <br></br>
                     <Image src={ riparian_map }></Image>
                 </div>
             </>

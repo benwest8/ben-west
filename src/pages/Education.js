@@ -63,7 +63,7 @@ class Education extends React.Component {
               <Card.Header><b>Study Abroad in Chile</b></Card.Header>
               <Card.Body>
                 <Card.Text text="dark" text-align="left">
-                  <p></p>
+                  <p>Fall 2018 - I was lucky enough to spend 5 months studying abroad in Viña del Mar, Chile.</p>
                 </Card.Text>
               </Card.Body>
             </Card>
