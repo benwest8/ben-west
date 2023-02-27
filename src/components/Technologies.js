@@ -20,7 +20,11 @@ export default function ChipsArray() {
     { key: 8, label: 'QGIS' },
     { key: 9, label: 'SQL' },
     { key: 10, label: 'WordPress' },
-    { key: 10, label: 'Jira' }
+    { key: 11, label: 'Jira' },
+    { key: 12, label: 'Jenkins' },
+    { key: 13, label: 'GitHub Actions' },
+    { key: 14, label: 'AWS' }
+
   ];
 
   return (

@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import SchoolIcon from '@mui/icons-material/School';
 import PlaceIcon from '@mui/icons-material/Place';
 
-class Education extends React.Component {
+class EducationCard extends React.Component {
     render() {
       return (
         <>
@@ -22,4 +22,4 @@ class Education extends React.Component {
     }
   }
 
-  export default Education;
+  export default EducationCard;

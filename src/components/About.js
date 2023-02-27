@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Resume from '../images/BenWest_Resume_Indeed.png';
+import Resume from '../images/BenWest_Resume.pdf';
 import Button from 'react-bootstrap/Button';
 
 class About extends React.Component {
@@ -11,7 +11,7 @@ class About extends React.Component {
             <Card.Header><b>About Me</b></Card.Header>
             <Card.Body>
               <Card.Text text="dark">
-                <p>I'm a web developer. My background consists of a traditional Computer Science Degree + professional full-stack development experience. I also like to play guitar and get outside when I can!</p>
+                <p>I'm a software engineer interested in modern full-stack web development. I'm currently gaining programming skills in JavaScript, React, Node.js, and Python. I'm also expirimenting with modern open-source GIS tools like QGIS. In my free time, I like to get outside or play guitar!</p>
                 <a href={Resume} alt="image" target="_blank" rel="noreferrer">
                   <div className="mb-2">
                     <Button variant="secondary" size="lg">

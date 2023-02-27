@@ -1,58 +1,37 @@
-import React from 'react';
-import { Map, View } from 'ol';
-import TileLayer from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
-import 'ol/ol.css';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Icon } from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
+export default function Map() {
 
-/* 
-import Image from 'react-bootstrap/Image';
-import lory_map from '../src/images/lory_map.png'
-import Riparian_Map from '../src/images/Riparian_FinalMap.png'
+   // could easily make this feature an entire tour of my life 
+   const position = [40.703, -105.0085856]
+   const schoolPosition = [45.542740, -94.444473]
+   const alaskaPosition = []
 
+   const customIcon = new Icon({
+    iconUrl: "/icons8-select-24.png",
+    iconSize: [20, 20]
+  })
 
-<Col>
-<Alert variant="success">
-<Alert.Heading>Maps</Alert.Heading>
-<p>
-  Here are some maps I've made to demonstrate spatial concepts.
-</p>
-</Alert>
-<Image src={lory_map} fluid alt="here" width="80%" />
-<Button variant="secondary" size="lg">
-Learn About This Map
-</Button>{' '}
-<Image src={Riparian_Map} fluid alt="here" width="80%" />
-</Col>
-*/
-
-export default class MyMap extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-          center: [0, 0],
-          zoom: 0,
-      };
-    }
-
-    componentDidMount() {
-        new Map({
-          target: "map-container",
-            layers: [
-                new TileLayer({
-                    source: new OSM(),
-                }),
-            ],
-            view: new View({
-                center: [0, 0],
-                zoom: 0,
-            }),
-        });
-    }
-
-    render() {
-        return (
-        <div style={{height:'80',width:'80%'}} id="map-container" className="map-container" />
-        );
-    }
-}
+    return (
+        <div className="leaflet-container">
+        <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position} icon={customIcon}>
+                <Popup>
+                     Wellington, CO. Currently home.
+                </Popup>
+            </Marker>
+            <Marker position={schoolPosition} >
+                <Popup>
+                    Saint John's University, MN
+                </Popup>
+            </Marker>
+        </MapContainer>
+        </div>
+    )
+};
