@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ben-west/static/css/main.82b3e9bf.css",
-    "main.js": "/ben-west/static/js/main.85ed44ec.js",
+    "main.js": "/ben-west/static/js/main.3071af62.js",
     "static/media/kayak.png": "/ben-west/static/media/kayak.3152bdc799aa90c966ca.png",
     "static/media/ski.png": "/ben-west/static/media/ski.c9a687276bc760c46f38.png",
     "static/media/fish.png": "/ben-west/static/media/fish.6e9a4259a5f46d0c092f.png",
@@ -12,10 +12,10 @@
     "static/media/sjuSoccerLogo.png": "/ben-west/static/media/sjuSoccerLogo.203130172a28251b42de.png",
     "index.html": "/ben-west/index.html",
     "main.82b3e9bf.css.map": "/ben-west/static/css/main.82b3e9bf.css.map",
-    "main.85ed44ec.js.map": "/ben-west/static/js/main.85ed44ec.js.map"
+    "main.3071af62.js.map": "/ben-west/static/js/main.3071af62.js.map"
   },
   "entrypoints": [
     "static/css/main.82b3e9bf.css",
-    "static/js/main.85ed44ec.js"
+    "static/js/main.3071af62.js"
   ]
 }
