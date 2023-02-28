@@ -7,9 +7,6 @@ export default function Map() {
    // could easily make this feature an entire tour of my life 
    const position = [40.703, -105.0085856]
    const schoolPosition = [45.542740, -94.444473]
-   const alaskaPosition = []
-   const wpPosition = []
-   const epPosition = []
 
    const customIcon = new Icon({
     iconUrl: "/icons8-select-24.png",
@@ -31,21 +28,6 @@ export default function Map() {
             <Marker position={schoolPosition} >
                 <Popup>
                     Saint John's University, MN
-                </Popup>
-            </Marker>
-            <Marker position={alaskaPosition} >
-                <Popup>
-                    Saint John's University, MN
-                </Popup>
-            </Marker>
-            <Marker position={wpPosition} >
-                <Popup>
-                    Winter Park, CO
-                </Popup>
-            </Marker>
-            <Marker position={epPosition} >
-                <Popup>
-                    Estes Park, CO
                 </Popup>
             </Marker>
         </MapContainer>
