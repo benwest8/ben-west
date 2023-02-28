@@ -34,3 +34,24 @@ export default function Map() {
         </div>
     )
 };
+    return (
+        <div className="leaflet-container">
+        <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position} icon={customIcon}>
+                <Popup>
+                     Wellington, CO. Currently home.
+                </Popup>
+            </Marker>
+            <Marker position={schoolPosition} >
+                <Popup>
+                    Saint John's University, MN
+                </Popup>
+            </Marker>
+        </MapContainer>
+        </div>
+    )
+};
