@@ -21,6 +21,7 @@ class App extends React.Component {
           {/* List Possible Page Routes Here */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/ben-west" element={<Home />} />
             <Route path="/education" element={<Education />} />
             <Route path="/dev" element={<Dev />} />
             <Route path="/maps" element={<Maps />} />
