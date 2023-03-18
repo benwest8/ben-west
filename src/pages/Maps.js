@@ -1,26 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Map from '../components/Map'
 import { Image } from 'react-bootstrap';
 import riparian_map from '../images/Riparian_FinalMap.png'
+import { Break } from '../components/common/CustomBreak'
 
-class Maps extends React.Component {
+export default function Maps () {
+    
+    const [ isExpanded, setIsExpanded ] = useState(false)
 
-    render() {
+    // const mapsIHaveMade = []
+
+    function toggleMap() {
+        setIsExpanded(!isExpanded)
+    }
+
         return (
             <>
                 <div>
                     <h1>Maps</h1>
                     {/* <p>Teacher story of map making - 1st day of GIS</p> */}
                     <Map />
-                    <br></br>
-                    <Image src={ riparian_map }></Image>
+                    <Break />
+                    <Image src={ riparian_map } onMouseOver={toggleMap} onMouseOut={toggleMap} style={{transform: isExpanded ? 'scale(1.05)' : 'scale(1)'}}></Image>
                 </div>
             </>
         );
-    }
 }
-
-export default Maps;
 
 /* 
 import Image from 'react-bootstrap/Image';
