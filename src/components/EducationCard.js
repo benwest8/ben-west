@@ -3,8 +3,8 @@ import Card from 'react-bootstrap/Card';
 import SchoolIcon from '@mui/icons-material/School';
 import PlaceIcon from '@mui/icons-material/Place';
 
-class EducationCard extends React.Component {
-    render() {
+function EducationCard(props) {
+  
       return (
         <>
           <Card border="dark" bg="dark" fluid style={{ width: '20rem' }}>
@@ -19,7 +19,6 @@ class EducationCard extends React.Component {
           <br />
         </>
       );
-    }
   }
 
   export default EducationCard;

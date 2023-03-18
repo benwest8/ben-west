@@ -7,8 +7,8 @@ import SJU_Logo from '../images/sjuLogo.png';
 import senate_Logo from '../images/senateLogo.png';
 import soccer_Logo from '../images/sjuSoccerLogo.png';
 import uai_Logo from '../images/uaiLogo.png'
-
-import Card from 'react-bootstrap/Card';
+import ContentCard from '../components/common/ContentCard'
+import { Break } from '../components/common/CustomBreak';
 
 
 class Education extends React.Component {
@@ -23,50 +23,28 @@ class Education extends React.Component {
             <EducationCard />
           </Col>
         </Row>
-        <br></br>
+        <Break />
         <Row>
-          {/* These cards should be put in their own component as I reuse them quite a bit */}
           <Col>
-            <Card border="dark" bg="dark" fluid style={{ width: '20rem' }}>
-              <Card.Header><b>Sustainability Representaive</b></Card.Header>
-              <Card.Body>
-                <Card.Text text="dark" text-align="left">
-                  <p></p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <ContentCard header="Sustainability Representative" text="sample text"/>
           </Col>
           <Col>
             <Image src={senate_Logo} style={{ width: 300}} rounded></Image>
           </Col>
         </Row>
-        <br></br>
+        <Break />
         <Row>
           <Col>
             <Image src={soccer_Logo} style={{ width: 200}} rounded></Image>
           </Col>
           <Col>
-            <Card border="dark" bg="dark" fluid style={{ width: '20rem' }}>
-              <Card.Header><b>Soccer</b></Card.Header>
-              <Card.Body>
-                <Card.Text text="dark" text-align="left">
-                  <p>Soccer was a huge part of my college experience.</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <ContentCard header='NCAA D3 Soccer' text='Student-Athlete' />
           </Col>
         </Row>
-        <br></br>
+        <Break />
         <Row>
           <Col>
-            <Card border="dark" bg="dark" fluid style={{ width: '20rem' }}>
-              <Card.Header><b>Study Abroad in Chile</b></Card.Header>
-              <Card.Body>
-                <Card.Text text="dark" text-align="left">
-                  <p>Fall 2018 - I was lucky enough to spend 5 months studying abroad in Viña del Mar, Chile.</p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <ContentCard header="Study Abroad" text='Fall 2018' />
           </Col>
           <Col>
             <Image src={uai_Logo} style={{ width: 300}} rounded></Image>
