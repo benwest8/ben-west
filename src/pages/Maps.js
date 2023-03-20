@@ -7,7 +7,8 @@ import { Break } from '../components/common/CustomBreak'
 export default function Maps () {
     
     const [ isExpanded, setIsExpanded ] = useState(false)
-
+    
+    // TODO: Add more maps
     // const mapsIHaveMade = []
 
     function toggleMap() {
@@ -21,6 +22,7 @@ export default function Maps () {
                     {/* <p>Teacher story of map making - 1st day of GIS</p> */}
                     <Map />
                     <Break />
+                    {/* I want to make a Map Container component and size can be a prop. There will also be a loop here to map through the maps I made array */}
                     <Image src={ riparian_map } onMouseOver={toggleMap} onMouseOut={toggleMap} style={{transform: isExpanded ? 'scale(1.05)' : 'scale(1)'}}></Image>
                 </div>
             </>
